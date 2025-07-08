@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>halaman saya</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            margin: 50px auto;
+            position: relative;
+            /* right: 130px; */
+            /* padding: 20px; */
+            box-sizing: border-box;
+            background-color: black;
+            /* border: 1px solid #333; */
+            /* box-shadow: 10px 10px 10px rgba(0, 0, 0, .6); */
+        }
+
+        .container .hero {
+            background-color: transparent;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .container .hero ul {
+            display: flex;
+            justify-content: space-between;
+            width: 30%;
+            list-style: none;
+        }
+
+        .container .hero ul li a {
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: .7em;
+            color: #8b8b8b;
+        }
+
+        .container .hero ul li a:hover {
+            /* color: red; */
+            color: rgb(202, 7, 7);
+        }
+
+        .container .hero ul li a:active {
+            color: #333;
+        }
+
+        .container .hero h4 {
+            font-size: .9em;
+            text-transform: capitalize;
+            color: #8b8b8b;
+        }
+
+        span {
+            color: rgb(202, 7, 7);
+        }
+
+        .logo {
+            height: 380px;
+            background-image: url(../iki/img/iu.jpg);
+            background-size: cover;
+            border-bottom: 2px solid red;
+            border-top: 2px solid yellow;
+            background-position: 0 -50px;
+        }
+
+        .h4 {
+            color: #8b8b8b;
+            font-weight: bold;
+            font-size: .7em;
+            text-transform: capitalize;
+            position: relative;
+            left: 75px;
+            top: 20px;
+        }
+
+        .paragraf1 {
+            color: #8b8b8b;
+            font-size: .6em;
+            position: relative;
+            text-align: justify;
+            left: 75px;
+            top: 30px;
+            margin-right: 150px;
+            line-height: 3;
+            /* margin-bottom: 70px; */
+        }
+
+        .paragraf2 {
+            /* display: none; */
+            color: #8b8b8b;
+            font-size: .6em;
+            position: relative;
+            text-align: justify;
+            left: 75px;
+            top: 30px;
+            margin-right: 150px;
+            line-height: 3;
+        }
+
+        .paragraf3 {
+            /* display: none; */
+            color: #8b8b8b;
+            font-size: .6em;
+            position: relative;
+            text-align: justify;
+            left: 75px;
+            top: 30px;
+            margin-right: 150px;
+            line-height: 3;
+        }
+
+        .paragraf4 {
+            /* display: none; */
+            color: #8b8b8b;
+            font-size: .6em;
+            position: relative;
+            text-align: justify;
+            left: 75px;
+            top: 30px;
+            margin-right: 150px;
+            line-height: 3;
+            margin-bottom: 70px;
+        }
+
+        .ul {
+            color: #8b8b8b;
+            font-size: .6em;
+            position: relative;
+            text-align: justify;
+            left: 75px;
+            top: 30px;
+            margin-right: 150px;
+            line-height: 3;
+        }
+
+        .ul2 {
+            color: #8b8b8b;
+            font-size: .6em;
+            position: relative;
+            text-align: justify;
+            left: 75px;
+            top: 30px;
+            margin-right: 150px;
+            line-height: 3;
+        }
+
+        .ul3 {
+            color: #8b8b8b;
+            font-size: .6em;
+            position: relative;
+            text-align: justify;
+            left: 75px;
+            top: 30px;
+            margin-right: 150px;
+            line-height: 3;
+        }
+
+        .ul3 li {
+            position: relative;
+            top: -60px;
+        }
+
+        .ul3 li a {
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #1d1d1d;
+            /* border-bottom: 1px solid red; */
+            /* border-top: 1px solid red; */
+            padding: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .foot {
+            color: #fafafa;
+            font-size: .7em;
+            text-transform: capitalize;
+        }
+
+        
+
+        @media screen and (max-width: 576px) {
+            .container {
+            width: 480px;
+            margin: 10px auto;
+            position: relative;
+            /* right: 130px; */
+            /* padding: 20px; */
+            box-sizing: border-box;
+            background-color: black;
+            /* border: 1px solid #333; */
+            /* box-shadow: 10px 10px 10px rgba(0, 0, 0, .6); */
+            overflow: hidden;
+        }
+
+        .logo {
+            height: 200px;
+            background-image: url(../iki/img/kii.jpg);
+            background-size: cover;
+            border-bottom: 2px solid red;
+            border-top: 2px solid yellow;
+            background-position: 0 -60px;
+        }
+
+        .container .hero {
+            background-color: transparent;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .container .hero ul {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            list-style: none;
+        }
+
+        .container .hero ul li a {
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: .55em;
+            color: #c0c0c0;
+        }
+
+        .container .hero h4 {
+            font-size: .7em;
+            text-transform: capitalize;
+            color: #c0c0c0;
+        }
+
+        span {
+            color: rgb(202, 7, 7);
+        }
+
+        .footer {
+            background-color: #1d1d1d;
+            /* border-bottom: 1px solid red; */
+            /* border-top: 1px solid red; */
+            padding: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .foot {
+            color: #fafafa;
+            font-size: .5em;
+            text-transform: capitalize;
+        }
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero">
+            <h4>rizki <span>muhamad</span> syah</h4>
+            <ul>
+                <li><a href=""> home</a></li>
+                <li><a href=""> gallery</a></li>
+                <li><a href="../santi/index.html"> portfolio</a></li>
+                <li><a href=""> service</a></li>
+                <li><a href=""> about</a></li>
+            </ul>
+        </div>
+        <div class="logo"></div>
+        <h4 class="h4">dibuat pada 09 juli 2025</h4>
+        <p class="paragraf1"><b>Front End Web Developer.</b> <br> Sebagai seorang Front End Web Developer, saya memiliki kemampuan untuk menciptakan antarmuka pengguna yang menarik dan responsif. Saya dapat membantu anda mewujudkan desain website yang modern dan interaktif. Saya berkomitmen untuk memberikan hasil yang berkualitas dan memenuhi kebutuhan anda.</p>
+
+        <p class="paragraf2"><b>Berikut beberapa keahlian saya sebagai seorang Web Developer di jalur Front End.</b> <br> 
+        <ul class="ul" >
+            <li><b>HTML5</b> dan <b>CSS</b> untuk struktur dan styling website.</li>
+            <li><b>Javascript</b> untuk menambahkan interaktivitas dan fungsionalitas</li>
+        </ul>
+        </p>
+
+        <p class="paragraf3"><b>Sebagai seorang Front End Web Developer, saya menyediakan layanan-layanan berikut untuk membantu anda menciptakan website yang modern dan efektif.</b>
+            <ul class="ul2" >
+                <li><b>Desain antarmuka pengguna :</b> Saya dapat membantu anda menciptakan desain antarmuka pengguna yang menarik dan responsif.</li>
+
+                <li><b>Pengembangan website :</b> Membantu anda mengembangkan website yang kompleks.</li>
+
+                <li><b>Optimasi performa :</b> Saya dapat membantu anda mengoptimalkan performa website dengan menggunakan teknik-teknik seperti chaching, minifikasi dan kompresi.</li>
+
+                <li><b>Responsive design :</b> Menciptakan desain website yang responsif dan dapat diakses dengan mudah pada berbagai perangkat dan browser.</li>
+
+                <li><b>Maintenance dan update :</b> Saya dapat membantu anda memelihara dan memperbarui website anda untuk memastikan bahwa website tetap relevan dan efektif.</li>
+
+            </ul>
+        </p>
+
+        <p class="paragraf4">Jika anda memiliki pertanyaan atau ingin membahas proyek website anda, saya dengan senang hati membantu. <br><b>Silahkan hubungi Saya melalui :</b></p>
+            <ul class="ul3" >
+                <li><b>Email :</b> <a href="rizkims075@gmail.com">rizkims075@gmail.com</a></li>
+
+                <li><b>Telpon/Whatsapp :</b> 083897731454</li>
+
+                <li><b>Facebook :</b> <a href="https://www.facebook.com/profile.php?id=100089096350522">Rizki M Syah</a></li>
+
+                <li><b>Instagram :</b> <a href="https://www.instagram.com/syahriz_07_?igsh=YzljYTk1ODg3Zg==">syahriz_07_</a></li>
+
+                <li><b>Github :</b> <a href="">iki709/github.com</a></li>
+
+                <li><b>Website/portfolio saya :</b> <a href="">https://iki709.github.io/halaman</a></li>
+            </ul>
+
+        <div class="footer">
+            <h4 class="foot">09 juli 2025</h4>
+        </div>
+    </div>
+    
+</body>
+</html>
